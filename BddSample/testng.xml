@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Cucumber Test Suite" verbose="1">
+
+<listeners>
+       <listener class-name="com.listeners.Listeners" />
+   </listeners>
+
+
+  <test name="Cucumber Tests">
+    <parameter name="cucumber.glue" value="src/test/java/com/testdefinition" />
+    <parameter name="cucumber.features" value="src/test/resources/Feature" />
+    
+    
+    <classes>
+      <class name="com.runner.TestRunner" />
+    </classes>
+  </test>
+</suite>
